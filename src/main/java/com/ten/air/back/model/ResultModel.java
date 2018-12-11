@@ -12,13 +12,13 @@ public class ResultModel {
     public ResultModel() {
     }
 
-    public ResultModel(AditumCode code) {
+    public ResultModel(ResponseCode code) {
         this.code = code.getCode();
         this.msg = code.getMsg();
         this.data = "";
     }
 
-    public ResultModel(AditumCode code, Object data) {
+    public ResultModel(ResponseCode code, Object data) {
         this.code = code.getCode();
         this.msg = code.getMsg();
         this.data = data;

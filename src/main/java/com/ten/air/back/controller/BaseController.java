@@ -1,6 +1,5 @@
 package com.ten.air.back.controller;
 
-
 import com.ten.air.back.model.ResultModel;
 import com.ten.air.back.util.TimeGenerator;
 import com.ten.air.back.util.UidGenerator;

@@ -4,4 +4,12 @@
 
 ## 技术栈
 
-> Springboot + Mybatis + REST
+> Springboot + Mybatis + RESTapi + Mysql
+
+## API
+
+设备 "/air/device"
+
+记录 "/air/record"
+
+
