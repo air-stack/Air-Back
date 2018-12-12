@@ -1,6 +1,6 @@
 spring:
     datasource:
-        name: air
+        name: air_server
         url: jdbc:mysql://localhost:3306/air_server
         username: root
         password: wangshihao
