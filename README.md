@@ -1,6 +1,6 @@
 # Air Back
 
-> 基于SpringBoot快速开发后台数据服务，提供REST接口调用，基于Mybatis实现数据的CRUD操作。
+> 数据交互服务后端，基于SpringBoot快速开发后台数据服务，提供REST接口调用，基于Mybatis实现数据的CRUD操作。
 
 ## 技术栈
 
