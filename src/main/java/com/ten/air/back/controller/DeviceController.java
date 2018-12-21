@@ -34,6 +34,12 @@ public class DeviceController extends BaseController<AirDevice> {
     @Override
     public ResultModel post(@RequestBody AirDevice airDevice) {
         logger.info("DEVICE POST :" + airDevice);
+        // 新增设备属性
+        airDevice.setDeviceStatus(0);
+        airDevice.setAlias("新增嵌入式设备");
+        airDevice.setBjCreateTime(timeGenerator.currentTime());
+        airDevice.setIsDeleted(0);
+
         Integer result = service.insert(airDevice);
         return new ResultModel(ResponseCode.OK, result);
     }

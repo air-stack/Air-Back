@@ -34,6 +34,10 @@ public class RecordController extends BaseController<AirRecord> {
     @Override
     public ResultModel post(@RequestBody AirRecord airRecord) {
         logger.info("RECORD POST :" + airRecord);
+        // 新增记录属性
+        airRecord.setRecordTime(timeGenerator.currentTime());
+        airRecord.setIsDeleted(0);
+
         Integer result = service.insert(airRecord);
         return new ResultModel(ResponseCode.OK, result);
     }
