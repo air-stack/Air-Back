@@ -1,9 +1,9 @@
 package com.ten.air.back.controller;
 
-import com.ten.air.back.entity.AirRecord;
 import com.ten.air.back.model.ResponseCode;
 import com.ten.air.back.model.ResultModel;
 import com.ten.air.back.service.AirRecordService;
+import com.ten.air.back.entity.AirRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

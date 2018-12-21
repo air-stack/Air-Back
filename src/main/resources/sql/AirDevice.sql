@@ -1,5 +1,5 @@
--- auto Generated on 2018-11-29 10:35:16 
--- DROP TABLE IF EXISTS `air_device`; 
+-- auto Generated on 2018-11-29 10:35:16
+-- DROP TABLE IF EXISTS `air_device`;
 CREATE TABLE air_device(
     `id` INTEGER(20) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'id',
     `imei` VARCHAR(50) NOT NULL DEFAULT '' COMMENT 'SIM´®ºÅ',

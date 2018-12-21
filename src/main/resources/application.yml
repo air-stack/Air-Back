@@ -1,3 +1,9 @@
+server:
+  tomcat:
+    max-threads: 800
+    uri-encoding: UTF-8
+  port: 8090
+
 spring:
     datasource:
         name: air_server

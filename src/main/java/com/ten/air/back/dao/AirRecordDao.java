@@ -1,10 +1,9 @@
 package com.ten.air.back.dao;
 
+import com.ten.air.back.entity.AirRecord;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
-
-import com.ten.air.back.entity.AirRecord;
 
 public interface AirRecordDao {
 
