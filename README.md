@@ -54,3 +54,11 @@ File -> Project Structure -> Artifacts -> Add -> JAR -> from modules with depend
     java -jar project.jar (即运行主JAR包)
     
 检查是否启动成功
+
+### 快速部署
+
+已将打包好的jar包放在目录下，将Air_Back_jar拷贝到服务器文件下即可，进入目录，输入
+
+    java -jar Air-Back.jar
+    
+即可运行服务
