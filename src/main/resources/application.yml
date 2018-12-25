@@ -2,9 +2,11 @@ server:
   tomcat:
     max-threads: 800
     uri-encoding: UTF-8
+  # BACK启动端口
   port: 8090
 
 spring:
+    # 数据库配置
     datasource:
         name: air_server
         url: jdbc:mysql://localhost:3306/air_server
@@ -15,5 +17,7 @@ spring:
         driver-class-name: com.mysql.jdbc.Driver
 
 mybatis:
+    # XML文件扫描路径
     mapperLocations: classpath*:mapper/*.xml
+    # 实体类扫描路径
     typeAliasesPackage: com.ten.air.back.entity

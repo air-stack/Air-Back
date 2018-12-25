@@ -10,6 +10,9 @@ import java.util.UUID;
 @Component
 public class UidGenerator {
 
+    /**
+     * 生成唯一字符串ID
+     */
     public String generateUid() {
         return UUID.randomUUID().toString().replaceAll("-", "");
     }

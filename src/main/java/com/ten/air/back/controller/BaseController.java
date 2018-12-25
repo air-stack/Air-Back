@@ -8,17 +8,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * REST base controller
+ */
 @RestController
 public abstract class BaseController<Entity> {
 
     protected static final int NO_DELETED = 0;
     protected static final int IS_DELETED = 1;
 
-    // UUID 生成器
+    /**
+     * UUID 生成器
+     */
     @Autowired
     UidGenerator uidGenerator;
 
-    // TIME 生成器
+    /**
+     * TIME 生成器
+     */
     @Autowired
     TimeGenerator timeGenerator;
 
