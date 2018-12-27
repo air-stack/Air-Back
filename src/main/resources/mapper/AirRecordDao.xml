@@ -118,6 +118,23 @@
         LIMIT 1000
     </select>
 
+    <!-- 查询最近的数据，通过UNION组合多次查询的结果，返回List -->
+    <select id="selectLast" resultMap="AllColumnMap">
+        (SELECT
+        imei, temperature, humidity, pm25
+        FROM air_record
+        WHERE temperature != '0.0' AND humidity != '0.0'
+        ORDER BY record_time DESC
+        LIMIT 1)
+        UNION
+        (SELECT
+        imei, temperature, humidity, pm25
+        FROM air_record
+        WHERE pm25 != '0'
+        ORDER BY record_time DESC
+        LIMIT 1)
+    </select>
+
     <!--auto generated Code-->
     <delete id="delete">
         DELETE FROM air_record where id = #{pojo.id}

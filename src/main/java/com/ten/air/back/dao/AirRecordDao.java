@@ -15,4 +15,5 @@ public interface AirRecordDao {
 
     int update(@Param("pojo") AirRecord pojo);
 
+    List<AirRecord> selectLast();
 }

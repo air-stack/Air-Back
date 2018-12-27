@@ -7,6 +7,7 @@ import com.ten.air.back.entity.AirRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -25,6 +26,19 @@ public class RecordController extends BaseController<AirRecord> {
     @Autowired
     public RecordController(AirRecordService service) {
         this.service = service;
+    }
+
+    /**
+     * 获取时间最近的数据信息
+     */
+    @RequestMapping(value = "/last", method = RequestMethod.GET)
+    public ResultModel getLast() {
+        logger.info("RECORD LAST GET");
+        AirRecord record = service.selectLast();
+        if (record != null) {
+            return new ResultModel(ResponseCode.OK, record);
+        }
+        return new ResultModel(ResponseCode.ERROR);
     }
 
     /**
