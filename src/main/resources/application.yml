@@ -2,22 +2,17 @@ server:
   tomcat:
     max-threads: 800
     uri-encoding: UTF-8
-  # BACK启动端口
-  port: 8090
+  port: 9003
 
 spring:
-    # 数据库配置
     datasource:
-        name: air_server
-        url: jdbc:mysql://localhost:3306/air_server
+        name: air
+        url: jdbc:mysql://www.lifecat.club:3306/air
         username: root
         password: wangshihao
-        # 使用druid数据源
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
 
 mybatis:
-    # XML文件扫描路径
     mapperLocations: classpath*:mapper/*.xml
-    # 实体类扫描路径
     typeAliasesPackage: com.ten.air.back.entity

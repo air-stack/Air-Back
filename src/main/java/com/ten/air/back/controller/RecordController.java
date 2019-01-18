@@ -29,7 +29,7 @@ public class RecordController extends BaseController<AirRecord> {
     }
 
     /**
-     * 获取时间最近的数据信息
+     * 获取时间最近的一条数据信息
      */
     @RequestMapping(value = "/last", method = RequestMethod.GET)
     public ResultModel getLast() {

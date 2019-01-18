@@ -42,19 +42,38 @@ public class DeviceController extends BaseController<AirDevice> {
     }
 
     /**
-     * 创建新的AirDevice设备信息
+     * 创建或者更新AirDevice设备信息
      */
     @Override
     public ResultModel post(@RequestBody AirDevice airDevice) {
         logger.info("DEVICE POST :" + airDevice);
 
-        // 新增设备属性
-        airDevice.setAlias("新增嵌入式设备");
-        airDevice.setDeviceStatus(0);
-        airDevice.setBjCreateTime(timeGenerator.currentTime());
-        airDevice.setIsDeleted(0);
+        AirDevice entity = new AirDevice();
+        entity.setImei(airDevice.getImei());
+        entity.setIsDeleted(NO_DELETED);
 
-        Integer result = service.insert(airDevice);
+        List<AirDevice> devices = service.select(entity);
+        Integer result;
+        String time = timeGenerator.currentTime();
+        // 设备已存在 -> 更新状态
+        if (devices.size() > 0) {
+            entity.setId(devices.get(0).getId());
+            entity.setDeviceStatus(1);
+            entity.setBjUpdateTime(time);
+            entity.setLastOnlineTime(time);
+            result = service.update(entity);
+        }
+        // 设备不存在 -> 创建设备
+        else {
+            // 新增设备属性
+            airDevice.setAlias("新增嵌入式设备");
+            airDevice.setDeviceStatus(1);
+            airDevice.setBjCreateTime(time);
+            airDevice.setLastOnlineTime(time);
+            airDevice.setIsDeleted(NO_DELETED);
+            result = service.insert(airDevice);
+        }
+
         if (result > 0) {
             return new ResultModel(ResponseCode.OK, airDevice);
         }
