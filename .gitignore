@@ -1,13 +1,2 @@
-classes/
-.idea/
-Air-Back.iml
-target/archive-tmp/
-target/back-0.0.1-SNAPSHOT-jar-with-dependencies.jar
-target/back-0.0.1-SNAPSHOT.jar
-target/back-0.0.1-SNAPSHOT.jar.original
-target/generated-sources/
-target/generated-test-sources/
-target/maven-archiver/
-target/maven-status/
-target/surefire-reports/
-target/test-classes/
+.idea
+target
