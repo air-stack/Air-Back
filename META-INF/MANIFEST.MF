@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Class-Path: spring-jcl-5.1.3.RELEASE.jar jboss-logging-3.3.2.Final.jar
+  logback-classic-1.2.3.jar spring-boot-starter-json-2.1.1.RELEASE.jar
+  spring-tx-5.1.3.RELEASE.jar jackson-datatype-jdk8-2.9.7.jar mybatis-
+ spring-boot-autoconfigure-1.3.2.jar spring-data-rest-webmvc-3.1.3.REL
+ EASE.jar slf4j-api-1.7.25.jar spring-data-commons-2.1.3.RELEASE.jar m
+ ysql-connector-java-5.1.45.jar spring-hateoas-0.25.0.RELEASE.jar jul-
+ to-slf4j-1.7.25.jar javax.annotation-api-1.3.2.jar spring-webmvc-5.1.
+ 3.RELEASE.jar spring-boot-starter-2.1.1.RELEASE.jar spring-boot-start
+ er-web-2.1.1.RELEASE.jar snakeyaml-1.23.jar mybatis-3.4.5.jar spring-
+ aop-5.1.3.RELEASE.jar jackson-module-parameter-names-2.9.7.jar druid-
+ 1.1.10.jar hibernate-validator-6.0.13.Final.jar spring-boot-autoconfi
+ gure-2.1.1.RELEASE.jar spring-jdbc-5.1.3.RELEASE.jar log4j-api-2.11.1
+ .jar spring-expression-5.1.3.RELEASE.jar log4j-to-slf4j-2.11.1.jar lo
+ gback-core-1.2.3.jar jackson-annotations-2.9.0.jar spring-data-rest-c
+ ore-3.1.3.RELEASE.jar HikariCP-3.2.0.jar mybatis-spring-boot-starter-
+ 1.3.2.jar tomcat-embed-websocket-9.0.13.jar spring-context-5.1.3.RELE
+ ASE.jar spring-boot-starter-jdbc-2.1.1.RELEASE.jar classmate-1.4.0.ja
+ r spring-boot-starter-logging-2.1.1.RELEASE.jar spring-beans-5.1.3.RE
+ LEASE.jar tomcat-embed-el-9.0.13.jar spring-plugin-core-1.2.0.RELEASE
+ .jar evo-inflector-1.2.2.jar jackson-core-2.9.7.jar spring-web-5.1.3.
+ RELEASE.jar jackson-datatype-jsr310-2.9.7.jar fastjson-1.2.47.jar val
+ idation-api-2.0.1.Final.jar spring-core-5.1.3.RELEASE.jar spring-boot
+ -starter-tomcat-2.1.1.RELEASE.jar tomcat-embed-core-9.0.13.jar jackso
+ n-databind-2.9.7.jar spring-boot-2.1.1.RELEASE.jar spring-boot-starte
+ r-data-rest-2.1.1.RELEASE.jar mybatis-spring-1.3.1.jar
+Main-Class: 
+

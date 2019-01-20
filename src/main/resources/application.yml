@@ -7,7 +7,7 @@ server:
 spring:
     datasource:
         name: air
-        url: jdbc:mysql://www.lifecat.club:3306/air
+        url: jdbc:mysql://localhost:3306/air
         username: root
         password: wangshihao
         type: com.alibaba.druid.pool.DruidDataSource
